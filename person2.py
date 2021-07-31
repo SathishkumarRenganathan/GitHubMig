@@ -12,6 +12,6 @@ per2.printName()
 per1.designation()
 per3.designation()
 
-#for itr1 in (per1, per2):
- #   per1.designation()
-  #  per2.designation()
+for itr1 in (per1, per3):
+    per1.designation()
+    per3.designation()
