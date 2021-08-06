@@ -30,11 +30,12 @@ print("After pop: ", samsung["model1"])
 
 for x in samsung:
     no=samsung[x]["Year"]
-    if(no == 2021):
+    if(no == 2028):
         print("duplicate")
         #raise Exception("Duplicate year found!!!")
     else:
         print("Unique")
+        samsung[x]["Release Date"] = '12-Jul-2025'
 
 
 dictName = {
@@ -44,3 +45,18 @@ dictName = {
 }
 
 print(dictName)
+print(samsung)
+#delete the keys
+del dictName["key2"]
+print(dictName)
+
+#items method
+print('Using items metho: ',dictName.items())
+
+#Check keys are exist
+for key in samsung["model1"].keys():
+    if key in samsung["model2"].keys():
+        print("Keys are available")
+    else:
+        print("Keys are not available")
+
